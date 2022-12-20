@@ -1,5 +1,5 @@
-import { GithubRepoFormState } from 'app/pages/Example/old/Features/GithubRepoForm/slice/types';
 import { ThemeState } from 'style/theme/slice/types';
+import { GithubRepoFormState } from '../../internals/Example/old/Features/GithubRepoForm/slice/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 

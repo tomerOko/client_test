@@ -22,15 +22,14 @@ export function App() {
   return (
     <BrowserRouter>
       <Helmet
-        titleTemplate="%s - React Boilerplate"
-        defaultTitle="React Boilerplate"
+        titleTemplate="%s - my app"
+        defaultTitle="my app"
         htmlAttributes={{ lang: i18n.language }}
       >
-        <meta name="description" content="A React Boilerplate application" />
+        <meta name="description" content="what my app do" />
       </Helmet>
 
       <Routes>
-        {/* <Route path="/" element={<HomePage />} /> */}
         <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
