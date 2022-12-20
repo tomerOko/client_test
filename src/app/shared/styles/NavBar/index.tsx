@@ -8,10 +8,7 @@ import { PageWrapper } from '../PageWrapper';
 export function NavBar() {
   return (
     <Wrapper>
-      <PageWrapper>
-        <Logo />
-        <Nav />
-      </PageWrapper>
+      <PageWrapper></PageWrapper>
     </Wrapper>
   );
 }

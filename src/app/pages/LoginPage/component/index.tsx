@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { NavBar } from 'app/shared/styles/NavBar';
-import { Masthead } from './components/MustHead/Masthead';
 import { PageWrapper } from 'app/shared/styles/PageWrapper';
+import { LoginBox } from './components/LoginBox/component';
 
 export function LoginPage() {
   return (
@@ -16,7 +16,7 @@ export function LoginPage() {
       </Helmet>
       <NavBar />
       <PageWrapper>
-        <Masthead />
+        <LoginBox />
       </PageWrapper>
     </>
   );
