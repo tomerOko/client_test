@@ -8,7 +8,7 @@ export function LoginPage() {
   return (
     <>
       <Helmet>
-        <title>Home Page</title>
+        <title>Login</title>
         <meta
           name="login page"
           content="login page with google or with username and password"
