@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { P } from './P';
+import { P } from './styles/P';
 import { Link } from 'app/shared/styles/Link';
 import { NavBar } from 'app/shared/styles/NavBar';
 import { Helmet } from 'react-helmet-async';
