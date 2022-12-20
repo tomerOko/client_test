@@ -12,10 +12,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { GlobalStyle } from 'style/global-styles';
 
-import { HomePage } from './pages/Example/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/component/Loadable';
 import { useTranslation } from 'react-i18next';
 import { LoginPage } from './pages/LoginPage/component/Loadable';
+// import { HomePage } from './pages/Example/old/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -30,8 +30,8 @@ export function App() {
       </Helmet>
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/app" element={<LoginPage />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <GlobalStyle />

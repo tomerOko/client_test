@@ -1,24 +1,22 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { NavBar } from 'app/shared/styles/NavBar';
-import { Masthead } from './Masthead';
-import { Features } from './Features';
+import { Masthead } from './components/MustHead/Masthead';
 import { PageWrapper } from 'app/shared/styles/PageWrapper';
 
-export function HomePage() {
+export function LoginPage() {
   return (
     <>
       <Helmet>
         <title>Home Page</title>
         <meta
-          name="description"
-          content="A React Boilerplate application homepage"
+          name="login page"
+          content="login page with google or with username and password"
         />
       </Helmet>
       <NavBar />
       <PageWrapper>
         <Masthead />
-        <Features />
       </PageWrapper>
     </>
   );
