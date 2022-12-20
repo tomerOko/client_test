@@ -22,7 +22,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 import { configureAppStore } from 'store/configureStore';
 
-import { ThemeProvider } from 'styles/theme/ThemeProvider';
+import { ThemeProvider } from 'style/theme/ThemeProvider';
 
 import reportWebVitals from 'reportWebVitals';
 

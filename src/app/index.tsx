@@ -10,11 +10,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { GlobalStyle } from 'styles/global-styles';
+import { GlobalStyle } from 'style/global-styles';
 
-import { HomePage } from './pages/HomePage/Loadable';
+import { HomePage } from './pages/Example/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+import { LoginPage } from './pages/LoginPage/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -30,7 +31,7 @@ export function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/client" element={<HomePage />} />
+        <Route path="/app" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <GlobalStyle />

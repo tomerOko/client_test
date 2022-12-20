@@ -2,10 +2,10 @@ import * as React from 'react';
 import { NotFoundPage } from '..';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { themes } from 'styles/theme/themes';
+import { themes } from 'style/theme/themes';
 import { HelmetProvider } from 'react-helmet-async';
 import renderer from 'react-test-renderer';
-import { Link } from 'app/components/Link';
+import { Link } from 'app/shared/styles/Link';
 
 const renderPage = () =>
   renderer.create(
