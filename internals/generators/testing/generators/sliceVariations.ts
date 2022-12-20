@@ -1,4 +1,4 @@
-import { SliceProptNames } from '../../generators/slice';
+import { SliceProptNames } from '../../slice';
 
 type SliceVariationType = { [P in SliceProptNames]: any }[];
 

@@ -5,12 +5,12 @@ import shell from 'shelljs';
 import path from 'path';
 import nodePlop from 'node-plop';
 
-import { ComponentProptNames } from '../../generators/component';
-import { rootStatePath, SliceProptNames } from '../../generators/slice';
+import { ComponentProptNames } from '../../component';
+import { rootStatePath, SliceProptNames } from '../../slice';
 import { PlopGenerator as PG } from 'node-plop';
 import { componentVariations } from './componentVariations';
 import { sliceVariations } from './sliceVariations';
-import { baseGeneratorPath } from '../../generators/paths';
+import { baseGeneratorPath } from '../../paths';
 
 interface PlopGenerator extends PG {
   runActions: <T extends string | number>(props: { [P in T]: any }) => Promise<{

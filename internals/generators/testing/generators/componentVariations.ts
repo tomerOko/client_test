@@ -1,4 +1,4 @@
-import { ComponentProptNames } from '../../generators/component';
+import { ComponentProptNames } from '../../component';
 
 type ComponentVariationType = { [P in ComponentProptNames]: any }[];
 
