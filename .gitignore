@@ -31,3 +31,8 @@ generated-cra-app
 .cra-template-rb
 template
 .eslintcache
+
+deleteme.txt
+environment/.env.dev
+environment/.env.production
+environment/.env.testing

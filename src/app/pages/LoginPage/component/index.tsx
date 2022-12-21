@@ -4,6 +4,8 @@ import { NavBar } from 'app/shared/styles/NavBar';
 import { PageWrapper } from 'app/shared/styles/PageWrapper';
 import { LoginBox } from './components/LoginBox/component';
 
+c;
+
 export function LoginPage() {
   return (
     <>
