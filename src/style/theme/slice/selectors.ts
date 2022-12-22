@@ -8,7 +8,6 @@ import { isSystemDark } from '../utils';
 export const selectTheme = createSelector(
   [(state: RootState) => state.theme || initialState],
   theme => {
-    debugger;
     if (theme.selected === 'system') {
       return isSystemDark ? themes.dark : themes.light;
     }
