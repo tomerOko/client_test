@@ -11,10 +11,11 @@ export function LoginWithGoogle() {
       <div
         id="g_id_onload"
         data-client_id="292283129342-6hii1vpcc3c7mpapaehgu0bfavlb8o1v"
-        data-context="signup"
-        data-ux_mode="popup"
-        data-login_uri="https://your.domain/auth/one-tap/callback"
-        data-auto_prompt="false"
+        // data-context="signup"
+        // data-ux_mode="popup"
+        // data-login_uri="http:/localhost:3000/auth/one-tap/callback"
+        data-native_login_uri="http:/localhost:3000/auth/one-tap/callback"
+        // data-auto_prompt="false"
       ></div>
 
       <div
