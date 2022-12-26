@@ -1,5 +1,5 @@
 import { ThemeState } from 'style/theme/slice/types';
-import { GithubRepoFormState } from '../../internals/Example/old/Features/GithubRepoForm/slice/types';
+// import { GithubRepoFormState } from '../../internals/Example/old/Features/GithubRepoForm/slice/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 
@@ -10,6 +10,6 @@ import { GithubRepoFormState } from '../../internals/Example/old/Features/Github
 */
 export interface RootState {
   theme?: ThemeState;
-  githubRepoForm?: GithubRepoFormState;
+  // githubRepoForm?: GithubRepoFormState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }

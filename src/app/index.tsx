@@ -12,10 +12,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { GlobalStyle } from 'style/global-styles';
 
-import { NotFoundPage } from './pages/NotFoundPage/component/Loadable';
+import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
-import { LoginPage } from './pages/LoginPage/component/Loadable';
-import SideBar from './pages/sidebar/component';
+import { LoginPage } from './pages/LoginPage/Loadable';
 // import { HomePage } from './pages/Example/old/Loadable';
 
 export function App() {
@@ -29,7 +28,6 @@ export function App() {
       >
         <meta name="description" content="what my app do" />
       </Helmet>
-      <SideBar></SideBar>
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
