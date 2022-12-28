@@ -1,16 +1,19 @@
 import React, { memo } from 'react';
-import styled from 'styled-components/macro';
+import styled, { StyledFunction } from 'styled-components';
 
 type InputProps = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement
 >;
 
+export type Area = 'sidebar' | 'main' | 'data';
+
 interface Props extends InputProps {
   id: string;
   label: string;
   className?: string;
   isSelected?: boolean;
+  area: Area;
 }
 
 export const Radio = memo(
@@ -40,11 +43,11 @@ const Wrapper = styled.div`
       position: relative;
       cursor: pointer;
       font-size: 0.875rem;
-      color: ${p => p.theme.text};
+      color: ${p => p.theme[(p as any).area].text};
       z-index: 1;
 
       a {
-        color: ${p => p.theme.text};
+        color: ${p => p.theme[(p as any).area].text};
         text-decoration: none;
       }
 
@@ -56,9 +59,9 @@ const Wrapper = styled.div`
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
-        background-color: ${p => p.theme.background};
+        background-color: ${p => p.theme[(p as any).area].background};
         content: '';
-        border: 2px solid ${p => p.theme.border};
+        border: 2px solid black;
         transition: all 0.1s;
       }
 
@@ -72,12 +75,12 @@ const Wrapper = styled.div`
         border-radius: 50%;
         top: 0.5625rem;
         left: 0.3125rem;
-        background-color: ${p => p.theme.background};
+        background-color: ${p => p.theme[(p as any).area].background};
       }
 
       &:hover {
         &::before {
-          border-color: ${p => p.theme.primary};
+          border-color: ${p => p.theme[(p as any).area].color};
         }
       }
     }
@@ -89,34 +92,8 @@ const Wrapper = styled.div`
 
         &:hover {
           &::before {
-            border-color: ${p => p.theme.border};
+            border-color: ${p => p.theme[(p as any).area].border};
           }
-        }
-      }
-    }
-
-    &:focus {
-      + label {
-        &::before {
-          box-shadow: 0 0 0 3px
-            ${p =>
-              p.theme.primary.replace(
-                /rgba?(\(\s*\d+\s*,\s*\d+\s*,\s*\d+)(?:\s*,.+?)?\)/,
-                'rgba$1,0.2)',
-              )};
-        }
-      }
-    }
-
-    &:checked {
-      + label {
-        &::before {
-          background-color: ${p => p.theme.primary};
-          border-color: ${p => p.theme.primary};
-        }
-
-        &::after {
-          display: inline-block;
         }
       }
     }

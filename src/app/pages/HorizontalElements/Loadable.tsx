@@ -15,9 +15,9 @@ const LoadingWrapper = styled.div`
   justify-content: center;
 `;
 
-export const LoginPage = lazyLoad(
+export const HorizontalElementsPage = lazyLoad(
   () => import('./index'),
-  module => module.LoginPage,
+  module => module.HorizontalElementsPage,
   {
     fallback: (
       <LoadingWrapper>

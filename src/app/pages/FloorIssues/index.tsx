@@ -1,13 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { LoginBox } from './components/LoginBox';
 import { SideBar } from 'app/shared/styles/SideBar';
 import {
-  SideBarCentralColumn,
-  SideBarPageWrapper,
-} from 'app/shared/styles/SideBar/SideBarWrapper';
+  MainPageWrapper,
+  MainCentralColumn,
+} from 'app/shared/styles/main/MainPageWrapper';
 
-export function LoginPage() {
+export function FloorIssues() {
   return (
     <>
       <Helmet>
@@ -17,12 +16,12 @@ export function LoginPage() {
           content="login page with google or with username and password"
         />
       </Helmet>
-      <SideBarPageWrapper>
+      <MainPageWrapper>
         <SideBar></SideBar>
-        <SideBarCentralColumn>
-          <LoginBox />
-        </SideBarCentralColumn>
-      </SideBarPageWrapper>
+        <MainCentralColumn>
+          <h1>Issues</h1>
+        </MainCentralColumn>
+      </MainPageWrapper>
     </>
   );
 }

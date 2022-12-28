@@ -15,6 +15,7 @@ import { GlobalStyle } from 'style/global-styles';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 import { LoginPage } from './pages/LoginPage/Loadable';
+import { ElementPage } from './pages/Element/Loadable';
 // import { HomePage } from './pages/Example/old/Loadable';
 
 export function App() {
@@ -30,6 +31,7 @@ export function App() {
       </Helmet>
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        <Route path="/element" element={<ElementPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <GlobalStyle />

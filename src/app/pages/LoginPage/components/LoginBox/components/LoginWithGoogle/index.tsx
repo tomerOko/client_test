@@ -1,6 +1,4 @@
 import React from 'react';
-// import { GoogleOneTap } from 'google-one-tap';
-import { TextButton } from '../../../../../../shared/styles/BeckgroundButton/TextButton';
 import useScript from 'utils/hooks/useScript';
 
 export function LoginWithGoogle() {

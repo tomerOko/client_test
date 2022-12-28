@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: ${p => p.theme.background};
+    color: ${p => p.theme.main.text};
+    background-color: ${p => p.theme.main.background};
   }
 
   body.fontLoaded {

@@ -1,12 +1,10 @@
 import styled from 'styled-components/macro';
 
-export const TextButton = styled.button`
-  background: none;
+export const AbstractButton = styled.button`
   outline: none;
   padding: 0;
   margin: 0;
   border: none;
-  color: ${p => p.theme.primary};
   cursor: pointer;
 
   &:hover {

@@ -1,10 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import { P } from './styles/P';
-import { Link } from 'app/shared/styles/Link';
 import { Helmet } from 'react-helmet-async';
 import { SideBar } from 'app/shared/styles/SideBar';
-import { A } from 'app/shared/styles/A';
+import { Link } from 'react-router-dom';
 
 export function NotFoundPage() {
   return (
@@ -15,7 +14,7 @@ export function NotFoundPage() {
       </Helmet>
       <Wrapper>
         <SideBar>
-          <A href={process.env.PUBLIC_URL + '/'}>Home</A>
+          <Link to={process.env.PUBLIC_URL + '/'}>Home</Link>
         </SideBar>
         <Title>
           4
@@ -43,7 +42,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
   margin-top: -8vh;
   font-weight: bold;
-  color: ${p => p.theme.text};
+  color: ${p => p.theme.main.text};
   font-size: 3.375rem;
 
   span {
