@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { LoginBox } from './components/LoginBox';
-import { SideBar } from 'app/shared/styles/SideBar';
+import { Sidebar_ } from 'app/shared/styles/Sidebar/SidebarWrapper';
 import {
-  SideBarCentralColumn,
-  SideBarPageWrapper,
-} from 'app/shared/styles/SideBar/SideBarWrapper';
+  SidebarCentralColumn,
+  SidebarPageWrapper,
+} from '../../shared/styles/sidebar/SidebarWrapper';
 
 export function LoginPage() {
   return (
@@ -17,12 +17,12 @@ export function LoginPage() {
           content="login page with google or with username and password"
         />
       </Helmet>
-      <SideBarPageWrapper>
-        <SideBar></SideBar>
-        <SideBarCentralColumn>
+      <SidebarPageWrapper>
+        <Sidebar_></Sidebar_>
+        <SidebarCentralColumn>
           <LoginBox />
-        </SideBarCentralColumn>
-      </SideBarPageWrapper>
+        </SidebarCentralColumn>
+      </SidebarPageWrapper>
     </>
   );
 }

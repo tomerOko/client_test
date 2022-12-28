@@ -1,8 +1,8 @@
-import { SideBarFlex } from 'app/shared/styles/SideBar/SideBarDiv';
 import {
-  SideBarPageWrapper,
-  SideBarCentralColumn,
-} from 'app/shared/styles/SideBar/SideBarWrapper';
+  SidebarCentralColumn,
+  SidebarPageWrapper,
+} from '../../shared/styles/sidebar/SidebarWrapper/index';
+import { SidebarDiv } from 'app/shared/styles/sidebar/SidebarDiv';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components/macro';
@@ -17,8 +17,8 @@ export function ElementPage() {
           content="Elements page that redirects to the element to horizontal or vertical pages"
         />
       </Helmet>
-      <SideBarPageWrapper>
-        <SideBarCentralColumn>
+      <SidebarPageWrapper>
+        <SidebarCentralColumn>
           <TitleFlex>
             <Title>Choose your project’s Element</Title>
           </TitleFlex>
@@ -28,8 +28,8 @@ export function ElementPage() {
             <Button>Horizontal</Button>
             <Button>Horizontal</Button>
           </OptionsFlex>
-        </SideBarCentralColumn>
-      </SideBarPageWrapper>
+        </SidebarCentralColumn>
+      </SidebarPageWrapper>
     </>
   );
 }
@@ -50,13 +50,12 @@ const Button = styled.button`
   border-radius: 45px;
 `;
 
-// exted SideBarFlex to add a margin to the top
-const TitleFlex = styled(SideBarFlex)`
+const TitleFlex = styled(SidebarDiv)`
   border: 2px solid black;
   margin-top: 200px;
 `;
 
-const OptionsFlex = styled(SideBarFlex)`
+const OptionsFlex = styled(SidebarDiv)`
   flex-wrap: wrap;
   gap: 2rem;
   border: 2px solid black;

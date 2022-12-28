@@ -1,10 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { SideBar } from 'app/shared/styles/SideBar';
 import {
-  MainPageWrapper,
   MainCentralColumn,
-} from 'app/shared/styles/main/MainPageWrapper';
+  MainPageWrapper,
+} from 'app/shared/styles/main/MainWrapper';
 
 export function FloorIssues() {
   return (
@@ -17,7 +16,6 @@ export function FloorIssues() {
         />
       </Helmet>
       <MainPageWrapper>
-        <SideBar></SideBar>
         <MainCentralColumn>
           <h1>Issues</h1>
         </MainCentralColumn>

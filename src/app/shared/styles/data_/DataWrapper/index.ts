@@ -5,10 +5,10 @@ import {
 } from '../../abstract/AbstractPageWrapper';
 import { dataColors } from '..';
 
-export const SideBarPageWrapper = styled(AbstractPageWrapper)`
+export const DataPageWrapper = styled(AbstractPageWrapper)`
   ${dataColors}
 `;
 
-export const SideBarCentralColumn = styled(AbstractCentralColumn)`
+export const DataCentralColumn = styled(AbstractCentralColumn)`
   ${dataColors}
 `;

@@ -2,7 +2,6 @@ import styled from 'styled-components/macro';
 import { abstractDiv } from '../../abstract/AbstractDiv';
 import { dataColors } from '..';
 
-//TODO: decide if the color and back ground color shuld be a div or a wrapper css property (in 'sidebar' in is the wrapper and here it is the div..)
 export const DataDiv = styled(abstractDiv)`
   ${dataColors}
   border-radius: 15px;

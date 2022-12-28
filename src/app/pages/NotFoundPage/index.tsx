@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components/macro';
 import { P } from './styles/P';
 import { Helmet } from 'react-helmet-async';
-import { SideBar } from 'app/shared/styles/SideBar';
 import { Link } from 'react-router-dom';
 
 export function NotFoundPage() {
@@ -13,9 +12,7 @@ export function NotFoundPage() {
         <meta name="description" content="Page not found" />
       </Helmet>
       <Wrapper>
-        <SideBar>
-          <Link to={process.env.PUBLIC_URL + '/'}>Home</Link>
-        </SideBar>
+        <Link to={process.env.PUBLIC_URL + '/'}>Home</Link>
         <Title>
           4
           <span role="img" aria-label="Crying Face">
