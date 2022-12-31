@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { abstractDiv } from '../../abstract/AbstractDiv';
+import { AbstractDiv } from '../../abstract/AbstractDiv';
 import { sidebarColors } from '..';
 
-export const SidebarDiv = styled(abstractDiv)`
+export const SidebarDiv = styled(AbstractDiv)`
   ${sidebarColors}
   border-radius: 15px;
 `;

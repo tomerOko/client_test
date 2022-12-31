@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { abstractDiv } from '../../abstract/AbstractDiv';
+import { AbstractDiv } from '../../abstract/AbstractDiv';
 import { dataColors } from '..';
 
-export const DataDiv = styled(abstractDiv)`
+export const DataDiv = styled(AbstractDiv)`
   ${dataColors}
   border-radius: 15px;
 `;

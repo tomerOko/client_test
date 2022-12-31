@@ -16,6 +16,7 @@ import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 import { LoginPage } from './pages/LoginPage/Loadable';
 import { ElementPage } from './pages/Element/Loadable';
+import { HomePage } from './pages/HomePage';
 // import { HomePage } from './pages/Example/old/Loadable';
 
 export function App() {
@@ -30,7 +31,8 @@ export function App() {
         <meta name="description" content="what my app do" />
       </Helmet>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/element" element={<ElementPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

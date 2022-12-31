@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { abstractDiv } from '../../abstract/AbstractDiv';
+import { AbstractDiv } from '../../abstract/AbstractDiv';
 import { mainColors } from '..';
 
-export const MainDiv = styled(abstractDiv)`
+export const MainDiv = styled(AbstractDiv)`
   ${mainColors}
   border-radius: 15px;
 `;

@@ -1,3 +1,5 @@
+import { Sidebar } from 'app/shared/components/SidebarComponent';
+import { SidebarPageWrapper } from 'app/shared/styles/sidebar/SidebarWrapper';
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -8,8 +10,8 @@ export function HorizontalElementsPage() {
         <title>Horizontal Elements Page</title>
         <meta name="Horizontal Elements Page" content="TODO:" />
       </Helmet>
-      <SidebarPageWrappe>
-        <Sidebar_></Sidebar_>
+      <SidebarPageWrapper>
+        <Sidebar></Sidebar>
       </SidebarPageWrapper>
     </>
   );

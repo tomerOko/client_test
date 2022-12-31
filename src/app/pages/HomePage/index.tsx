@@ -1,14 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { LoginBox } from './components/LoginBox';
 import {
   MainCentralColumn,
   MainPageWrapper,
 } from 'app/shared/styles/main/MainWrapper';
 import { SidebarDiv } from 'app/shared/styles/sidebar/SidebarDiv';
 import styled from 'styled-components';
+import { Sidebar } from 'app/shared/components/SidebarComponent';
 
-export function LoginPage() {
+export function HomePage() {
   return (
     <>
       <Helmet>
@@ -19,9 +19,8 @@ export function LoginPage() {
         />
       </Helmet>
       <MainPageWrapper>
-        <MainCentralColumn>
-          <LoginBox />
-        </MainCentralColumn>
+        <Sidebar></Sidebar>
+        <MainCentralColumn></MainCentralColumn>
       </MainPageWrapper>
     </>
   );

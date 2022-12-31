@@ -1,30 +1,46 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import { LoginWithGoogle } from './components/LoginWithGoogle';
+import { SidebarDiv } from 'app/shared/styles/sidebar/SidebarDiv';
+import { LoginWithCredentials } from './components/LoginWithCredentials';
+import { MainDivShadowed } from 'app/shared/styles/main/MainDiv';
+import { DataDiv } from 'app/shared/styles/data_/DataDiv';
 
 export function LoginBox() {
   // a google sign in button
   return (
     <>
-      <Wrapper>
-        <h1>LOGIN</h1>
-        <LoginWithGoogle></LoginWithGoogle>
-      </Wrapper>
+      <LoginBoxFrame>
+        <LoginOption style={{ border: '2px solid gray' }}>
+          <LoginWithCredentials></LoginWithCredentials>
+        </LoginOption>
+        <CenteredAbsoluteDiv>
+          <h2>or</h2>
+        </CenteredAbsoluteDiv>
+        <LoginOption>
+          <LoginWithGoogle></LoginWithGoogle>
+        </LoginOption>
+      </LoginBoxFrame>
     </>
   );
 }
 
-const Wrapper = styled.main`
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 320px;
-  color: #0c0909;
-  border-color: #000000;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  margin-top: 200px;
+const LoginBoxFrame = styled(SidebarDiv)`
+  height: 700px;
+  width: 80%;
+  justify-content: space-around;
 `;
+
+const LoginOption = styled(DataDiv)`
+  width: 40%;
+  height: 40%;
+`;
+
+const CenteredAbsoluteDiv = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+//style={{ border: '2px solid gray' }}
